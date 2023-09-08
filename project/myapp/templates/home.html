@@ -15,5 +15,13 @@
     {% endfor %}
     </ul>
    
+    <h1>Student Data</h1>
+    <ul>
+        {% for student in students %}
+        <li>
+            {{student.name}} : {{student.grade}} : <a href = "{{student.essay.url}}" download> Download Student Essay </a>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
